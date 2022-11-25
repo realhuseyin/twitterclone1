@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+    <link rel="stylesheet" href="huseyin.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css" integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+<body>
+    <!--Yan bar başlangıç-->
+    <div class="yanbar">        
+        <!--Logoyu koyduk-->
+        <i class="fab fa-twitter"></i>
+        <!--Yan barların logolarını ve isimlerini-->
+        <div class="yanbarlar active">
+            <span class="material-symbols-outlined">home</span>
+            <h2>Anasayfa</h2>
+        </div>
+        <div class="yanbarlar">
+            <span class="material-symbols-outlined">search</span>
+            <h2>Arama</h2>
+        </div>
+        <div class="yanbarlar">
+            <span class="material-symbols-outlined">notifications</span>
+            <h2>Bildirimler</h2>
+        </div>
+        <div class="yanbarlar">
+            <span class="material-symbols-outlined">mail</span>
+            <h2>Mesajlar</h2>
+        </div>
+        <div class="yanbarlar">
+            <span class="material-symbols-outlined">bookmark</span>
+            <h2>Kaydedilen</h2>
+        </div>
+        <div class="yanbarlar">
+            <span class="material-symbols-outlined">list_alt</span>
+            <h2>Listeler</h2>
+        </div>
+        <div class="yanbarlar">
+            <span class="material-symbols-outlined">person</span>
+            <h2>Profil</h2>
+        </div>
+        <div class="yanbarlar">
+            <span class="material-symbols-outlined">more_horiz</span>
+            <h2>Daha</h2>
+        </div>
+        <button class="yanbarlar_tweet">Tweet</button>
+    </div>
+    <!--Yan bar bitiş-->
+    
+    <!--Orta Bölüm başlangıç-->
+    <div class="orta">
+        <div class="orta_baslik">
+            <h2>Anasayfa</h2>
+        </div>
+        <!--Tweet Kutusu Başlangıç-->
+        <div class="tweetkutusu">
+            <form>
+                <div class="tweetbox_input">
+                    <img src="profile.png" alt="">
+                    <input type="text" placeholder="Neler Oluyor?">
+                </div>
+                <button class="tweetkutusu_butonu">Tweet</button>
+            </form>
+        </div>
+        <!--Tweet Kutusu Bitiş-->
+ 
+        <!--Paylaşım Başlangıç 1-->
+        <div class="paylasim">
+            <div class="paylasim_avatar">
+                <img src="profile.png" alt="">
+            </div>
+            <div class="paylasim_orta">
+                <div class="paylasim_ust">
+                    <div class="paylasim_ust_text">
+                        <h3>Kars Haberleri
+                            <span class="paylasim_ust_tik">
+                                <span class="material-symbols-outlined">verified</span>
+                            </span>
+                        </h3>
+                    </div>
+                <div class="paylasim_ust_tanim">
+                    <p>Son Dakika: Hüseyin Aydının yeni arabası tesla 999 km hıza ulaştı ve atmosferden çıktı.
+                        
+                    </p>
+                </div>            
+                </div>
+            <img src="car.jpg" alt="">
+            <div class="paylasim_son">
+                <span class="material-symbols-outlined">repeat</span>
+                <span class="material-symbols-outlined">favorite</span>
+                <span class="material-symbols-outlined">publish</span>
+                </div>
+            </div>
+        </div>
+        <!--Paylaşım Bitiş 1-->
+
+        <!--Paylaşım Başlangıç 2-->
+        <div class="paylasim">
+            <div class="paylasim_avatar">
+                <img src="profile.png" alt="">
+            </div>
+            <div class="paylasim_orta">
+                <div class="paylasim_ust">
+                    <div class="paylasim_ust_text">
+                        <h3>
+                            Kars Haberleri
+                            <span class="paylasim_ust_tik">
+                                <span class="material-symbols-outlined">verified</span>
+                            </span>
+                        </h3>
+                    </div>
+                <div class="paylasim_ust_tanim">
+                    <p>Son Dakika: Hüseyin Aydın Bulundu.
+                        <!--Yetkililer uzayda hüseyini aramaya devam ediyor.(Mobese kameralarına yansıyan son görüntüsü)--> 
+                    </p>
+                </div>            
+                </div>
+            <img src="car.jpg" alt="">
+            <div class="paylasim_son">
+                <span class="material-symbols-outlined">repeat</span>
+                <span class="material-symbols-outlined">favorite</span>
+                <span class="material-symbols-outlined">publish</span>
+                </div>
+            </div>
+        </div>
+        <!--Paylaşım Bitiş 2-->
+    </div>
+    <!--Orta Bölüm Bitiş-->
+
+</body>
+</html>
