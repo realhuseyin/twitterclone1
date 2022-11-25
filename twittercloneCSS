@@ -1,0 +1,212 @@
+/*Bunu kenar boşlugu olmaması için yapıyoruz*/
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/**/
+body{
+    --twitter-color: #50b7f5;
+    --twitter-background: #e6ecf0;
+}
+/*Burada yanbarların logoların ve yazıların yan yana gelmesini yaptık*/
+.yanbarlar{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+/*heryerden 20px verdik*/
+/*yanbar sınıfı içindeki material ve fa-twitteri al*/
+.yanbarlar .material-symbols-outlined, .fa-twitter{
+    padding: 20px;
+}
+/*yanbarlar içindeki tüm h2 etiketlerine işlem uyguladık*/
+.yanbarlar h2{
+    font-weight: 800;
+    font-size: 20px;
+    margin-right: 20px;
+}
+/*yanbarların üstüne gelince işlem uyguladık*/
+.yanbarlar:hover{
+    background-color: var(--twitter-background);
+    border-radius: 30px;
+   /*color rengi  transition üstüne gelince kaç saniye sonra yapsın ease-out yavaş geçiş*/
+    color: var(--twitter-color);
+    transition: color 200ms ease-out;
+}
+/*tweet tuşunu ayarladık*/
+.yanbarlar_tweet{
+    width: 100%;
+    background-color: var(--twitter-color);
+    /*Border none kenarlık vermedi*/
+    border: none;
+    color: white;
+    font-weight: 900;
+    border-radius: 30px;
+    height: 50px;
+    margin-top: 20px;
+}
+/*yanbarların düz olmasını sagladık*/
+body{
+    display: flex;
+    height: 100vh;
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0 10px;
+}
+/*Yanbar ilk ana divimizi ayarladık */
+.yanbar{
+    border-right: 1px solid var(--twitter-background);
+    flex: 0.2;
+    min-width: 250px;
+    margin-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+/*Twitter logosunu düzenledik*/
+.fa-twitter{
+    color: var(--twitter-color);
+    font-size: 30px;
+}
+/*Orta Bölümü*/
+
+/*Orta bölümün düzenini ayarlıyoruz*/
+.orta{
+    flex: 0.5;
+    border-right: 1px solid var(--twitter-background);
+    min-width: fit-content;
+    /*y ekseninde scroll çubugu koyduk*/
+    overflow-y: scroll;
+}
+/*Orta başlıgın düzenini ayarladık*/
+.orta_baslik{
+    /*Position: sticky kaydırma çubuklarını takip eder ve istenilen pozisyon yakalandığında nesneyi o noktada sabitler.*/
+    position: sticky;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border: 1px solid var(--twitter-background);
+    padding: 15px 20px;
+}
+.orta_baslik h2{
+    font-size: 20px;
+    font-weight: 800;
+}
+.orta::-webkit-scrollbar{
+    display: none;
+}
+
+.orta{
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+/*tweetbox input içindeki resimin boyutunu ayarladık*/
+.tweetbox_input img{
+    border-radius: 50%;
+    height: 40px;
+}
+/*tweet kutusunun ayarladık*/
+.tweetkutusu{
+    padding-bottom: 10px;
+    border-bottom: 8px solid var(--twitter-background);
+    padding-right: 10px;
+}
+/*form etiketini ayarlıyoruz*/
+.tweetkutusu form{
+    /*form elemanlarının yan yana gelmesini saglıyor*/
+    display: flex;
+    /*yukarıdan aşagıya sıraladık*/
+    flex-direction: column;
+}
+/*inputu yan yana ve heryerden 20px uzak şekilde ayarladık*/
+.tweetbox_input{
+    display: flex;
+    padding: 20px;
+}
+/*inputu özelleştirdik*/
+.tweetbox_input input{
+    flex: 2;
+    margin-left: 20px;
+    font-size: 20px;
+    border: none;
+    /*borderın kenarlarını kaldırdı*/
+    outline: none;
+}
+/*Tweet butonunu ayarladık*/
+.tweetkutusu_butonu{
+    background-color: var(--twitter-color);
+    border: none;
+    color:  white;
+    font-weight: 900;
+    border-radius: 30px;
+    width: 80px;
+    height: 40px;
+    margin-top: 20px;
+    margin-left: auto;
+}
+
+/*Paylaşım*/
+.paylasim_avatar img{
+    border-radius: 50%;
+    height: 40px;
+}
+/*Paylaşım genelini ayarladık*/
+.paylasim{
+    display: flex;
+    align-items: flex-start;
+    border-bottom: 1px solid var(--twitter-background);
+    padding-bottom: 10px;
+}
+/*paylaşım içindeki car resmini ayarladık*/
+.paylasim_orta img{
+    width: 450px;
+    object-fit: contain;
+    border-radius: 20px;
+}
+/*eklentileri ayarladık*/
+.paylasim_son{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 10px;
+}
+/*mavi tiki ayarladık*/
+.paylasim_ust_tik .material-symbols-outlined{
+    font-size: 14px !important;
+    color: var(--twitter-color);
+    margin-right: 5px;
+}
+/*h3 ayarladık*/
+.paylasim_ust_text h3{
+    font-size: 15px;
+    margin-bottom: 5px;
+}
+/*p etiketini ayarladık*/
+.paylasim_ust_tanim{
+    margin-bottom: 10px;
+    font-size: 15px;
+}
+/*oratayı ayarladık*/
+.paylasim_orta{
+    flex: 1;
+    padding: 10px;
+}
+/*avatarı ayarladık*/
+.paylasim_avatar{
+    padding: 10px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
